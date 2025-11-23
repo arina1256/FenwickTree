@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        FenwickTree<Long> arr = new FenwickTree<>(10);
+        FenwickTree<Long> arr = new FenwickTree<Long>(5);
         Long[] from1to5 = {1L, 2L, 3L, 4L, 5L};
         arr.build(from1to5);
         for (int i = 0; i < 5; i++) {
@@ -25,7 +25,7 @@ public class Main {
 
 
         // Тест 3:
-        System.out.println("\n3. Частичные суммы (от начала):");
+        System.out.println("\n3. Cуммы от начала:");
         for (int i = 0; i < 5; i++) {
             System.out.println("   Сумма от 0 до " + i + ": " + arr.prefixSum(i));
         }
